@@ -28,8 +28,8 @@
 /bin/rm -rf ~root/.ssh/
 
 dpkg-reconfigure openssh-server
-wget https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub -O /home/vagrant/.ssh/authorized_keys
-chmod 0600 /home/vagrant/.ssh/authorized_keys
+#wget https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub -O /home/vagrant/.ssh/authorized_keys
+#chmod 0600 /home/vagrant/.ssh/authorized_keys
 chown -R vagrant /home/vagrant/.ssh
 
 sudo apt-get purge -y binutils cpp cpp-5 gcc gcc-5 libasan2 libatomic1
